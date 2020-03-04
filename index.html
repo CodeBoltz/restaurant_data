@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Restaurants in Berlin</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <h1>Hello you beatiful human</h1>
+    <p>
+      Please choose in which neighborhood you want to eat:
+    </p>
+    <form action="cgi-bin/script_connect.py" method="POST">
+      <label>Kreuzberg</label><input type="checkbox" name="neighborhood" id="Kreuzberg" value="Kreuzberg"requiered>
+      <br>
+      <label>Wedding</label><input type="checkbox" name="neighborhood" id="Wedding" value="Wedding"required>
+      <br>
+      <label>Neukölln</label><input type="checkbox" name="neighborhood" id="Neukölln" value="Neukölln"required>
+      <br>
+      <label>Spandau</label><input type="checkbox" name="neighborhood" id="Spandau" value="Spandau"required>
+      <br>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
